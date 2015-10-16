@@ -22,10 +22,28 @@
                                     <constraint firstAttribute="height" constant="50" id="NEA-nP-7sY"/>
                                     <constraint firstAttribute="width" constant="50" id="gie-kd-3BC"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY6-fs-C1Z" customClass="PushButton" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="283" y="428" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Cwe-Eb-Ywf"/>
+                                    <constraint firstAttribute="width" constant="35" id="GL8-SK-4PQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mY6-fs-C1Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0yg-bQ-zVs"/>
+                            <constraint firstItem="mY6-fs-C1Z" firstAttribute="top" secondItem="W47-Sf-Dj1" secondAttribute="bottom" constant="53" id="6fN-sI-iUO"/>
                             <constraint firstItem="W47-Sf-Dj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Cs-EH-ylU"/>
                             <constraint firstItem="W47-Sf-Dj1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="Oqk-p6-0T0"/>
                         </constraints>
