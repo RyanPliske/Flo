@@ -6,6 +6,13 @@ import UIKit
     @IBInspectable var endColor: UIColor = UIColor.greenColor()
     
     override func drawRect(rect: CGRect) {
+//        let width = rect.width
+//        let height = rect.height
+        
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.AllCorners, cornerRadii: CGSize(width: 8.0, height: 8.0))
+        path.addClip()
+        
+        
         let cgContext = UIGraphicsGetCurrentContext()
         let colors = [startColor.CGColor, endColor.CGColor]
         let colorSpace = CGColorSpaceCreateDeviceRGB()
