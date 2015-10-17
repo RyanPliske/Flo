@@ -64,11 +64,11 @@
 				F9F29D651BD17F8800251212 /* ViewController.swift */,
 				F9F29D751BD182E000251212 /* PushButton.swift */,
 				F96EF1AB1BD1C07900A16D57 /* CounterView.swift */,
+				EF1C4A901BD2B863002598AB /* GraphView.swift */,
 				F9F29D671BD17F8800251212 /* Main.storyboard */,
 				F9F29D6A1BD17F8800251212 /* Assets.xcassets */,
 				F9F29D6C1BD17F8800251212 /* LaunchScreen.storyboard */,
 				F9F29D6F1BD17F8800251212 /* Info.plist */,
-				EF1C4A901BD2B863002598AB /* GraphView.swift */,
 			);
 			path = Flo;
 			sourceTree = "<group>";
