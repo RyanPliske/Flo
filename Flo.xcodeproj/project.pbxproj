@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1C4A911BD2B863002598AB /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C4A901BD2B863002598AB /* GraphView.swift */; settings = {ASSET_TAGS = (); }; };
 		F96EF1AC1BD1C07900A16D57 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96EF1AB1BD1C07900A16D57 /* CounterView.swift */; settings = {ASSET_TAGS = (); }; };
 		F9F29D641BD17F8800251212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F29D631BD17F8800251212 /* AppDelegate.swift */; };
 		F9F29D661BD17F8800251212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F29D651BD17F8800251212 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF1C4A901BD2B863002598AB /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		F96EF1AB1BD1C07900A16D57 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		F9F29D601BD17F8800251212 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F29D631BD17F8800251212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				F9F29D6A1BD17F8800251212 /* Assets.xcassets */,
 				F9F29D6C1BD17F8800251212 /* LaunchScreen.storyboard */,
 				F9F29D6F1BD17F8800251212 /* Info.plist */,
+				EF1C4A901BD2B863002598AB /* GraphView.swift */,
 			);
 			path = Flo;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1C4A911BD2B863002598AB /* GraphView.swift in Sources */,
 				F9F29D661BD17F8800251212 /* ViewController.swift in Sources */,
 				F9F29D761BD182E000251212 /* PushButton.swift in Sources */,
 				F9F29D641BD17F8800251212 /* AppDelegate.swift in Sources */,
