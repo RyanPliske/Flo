@@ -1,6 +1,6 @@
 import UIKit
-@IBDesignable
-class PushButton: UIButton {
+
+@IBDesignable class PushButton: UIButton {
     
     @IBInspectable var buttonColor: UIColor = UIColor.greenColor()
     @IBInspectable var isAddButton: Bool = true

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F96EF1AC1BD1C07900A16D57 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96EF1AB1BD1C07900A16D57 /* CounterView.swift */; settings = {ASSET_TAGS = (); }; };
 		F9F29D641BD17F8800251212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F29D631BD17F8800251212 /* AppDelegate.swift */; };
 		F9F29D661BD17F8800251212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F29D651BD17F8800251212 /* ViewController.swift */; };
 		F9F29D691BD17F8800251212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F29D671BD17F8800251212 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F96EF1AB1BD1C07900A16D57 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		F9F29D601BD17F8800251212 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F29D631BD17F8800251212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F29D651BD17F8800251212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				F9F29D631BD17F8800251212 /* AppDelegate.swift */,
 				F9F29D651BD17F8800251212 /* ViewController.swift */,
 				F9F29D751BD182E000251212 /* PushButton.swift */,
+				F96EF1AB1BD1C07900A16D57 /* CounterView.swift */,
 				F9F29D671BD17F8800251212 /* Main.storyboard */,
 				F9F29D6A1BD17F8800251212 /* Assets.xcassets */,
 				F9F29D6C1BD17F8800251212 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				F9F29D661BD17F8800251212 /* ViewController.swift in Sources */,
 				F9F29D761BD182E000251212 /* PushButton.swift in Sources */,
 				F9F29D641BD17F8800251212 /* AppDelegate.swift in Sources */,
+				F96EF1AC1BD1C07900A16D57 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
