@@ -95,5 +95,12 @@ import UIKit
         //draw the line on top of the clipped gradient
         graphPath.lineWidth = 2.0
         graphPath.stroke()
+        
+        //draw circles
+        for i in 0..<graphPoints.count {
+            let point = CGPoint(x: columnXPoint(i) - 2.5, y: columnYPoint(graphPoints[i]) - 2.5)
+            let circle = UIBezierPath(ovalInRect: CGRect(origin: point, size: CGSize(width: 5.0, height: 5.0)))
+            circle.fill()
+        }
     }
 }
