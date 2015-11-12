@@ -67,8 +67,8 @@ import UIKit
         
         //Create the clipping path for the graph gradient
         
-        //1 - save the state of the context (commented out for now)
-        //CGContextSaveGState(context)
+        //1 - save the state of the context
+        CGContextSaveGState(cgContext)
         
         //2 - make a copy of the path
         let clippingPath = graphPath.copy() as! UIBezierPath
@@ -90,11 +90,12 @@ import UIKit
         endPoint = CGPoint(x:margin, y:bounds.height)
         
         CGContextDrawLinearGradient(cgContext, cgGradient, startPoint, endPoint, CGGradientDrawingOptions.DrawsBeforeStartLocation)
-//        CGContextRestoreGState(cgContext)
         
         //draw the line on top of the clipped gradient
         graphPath.lineWidth = 2.0
         graphPath.stroke()
+        
+        CGContextRestoreGState(cgContext)
         
         //draw circles
         for i in 0..<graphPoints.count {
