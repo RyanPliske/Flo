@@ -19,8 +19,8 @@ import UIKit
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         let colorLocations:[CGFloat] = [0.0, 1.0]
         let cgGradient = CGGradientCreateWithColors(colorSpace, colors, colorLocations)
-        let startPoint = CGPoint.zero
-        let endPoint = CGPoint(x: 0, y: CGRectGetHeight(bounds))
+        var startPoint = CGPoint.zero
+        var endPoint = CGPoint(x: 0, y: CGRectGetHeight(bounds))
         //TODO: Check out CGGradientDrawingOptions
         CGContextDrawLinearGradient(cgContext, cgGradient, startPoint, endPoint, CGGradientDrawingOptions.DrawsBeforeStartLocation)
         
@@ -37,10 +37,10 @@ import UIKit
         let topBorder:CGFloat = 60
         let bottomBorder:CGFloat = 50
         let graphHeight = recHeight - topBorder - bottomBorder
-        let maxValue = graphPoints.maxElement()
+        let maxValue = graphPoints.maxElement()!
         let columnYPoint = { (graphPoint:Int) -> CGFloat in
             var y:CGFloat = CGFloat(graphPoint) /
-                CGFloat(maxValue!) * graphHeight
+                CGFloat(maxValue) * graphHeight
             y = graphHeight + topBorder - y // Flip the graph
             return y
         }
@@ -85,10 +85,15 @@ import UIKit
         //4 - add the clipping path to the context
         clippingPath.addClip()
         
-        //5 - check clipping path - temporary code
-        UIColor.greenColor().setFill()
-        let rectPath = UIBezierPath(rect: self.bounds)
-        rectPath.fill()
-        //end temporary code
+        let highestYPoint = columnYPoint(maxValue)
+        startPoint = CGPoint(x:margin, y: highestYPoint)
+        endPoint = CGPoint(x:margin, y:bounds.height)
+        
+        CGContextDrawLinearGradient(cgContext, cgGradient, startPoint, endPoint, CGGradientDrawingOptions.DrawsBeforeStartLocation)
+//        CGContextRestoreGState(cgContext)
+        
+        //draw the line on top of the clipped gradient
+        graphPath.lineWidth = 2.0
+        graphPath.stroke()
     }
 }
