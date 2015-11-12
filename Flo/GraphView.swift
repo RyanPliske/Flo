@@ -103,5 +103,30 @@ import UIKit
             let circle = UIBezierPath(ovalInRect: CGRect(origin: point, size: CGSize(width: 5.0, height: 5.0)))
             circle.fill()
         }
+        
+        //Draw horizontal graph lines on the top of everything
+        let linePath = UIBezierPath()
+        
+        //top line
+        linePath.moveToPoint(CGPoint(x:margin, y: topBorder))
+        linePath.addLineToPoint(CGPoint(x: recWidth - margin,
+            y:topBorder))
+        
+        //center line
+        linePath.moveToPoint(CGPoint(x:margin,
+            y: graphHeight/2 + topBorder))
+        linePath.addLineToPoint(CGPoint(x:recWidth - margin,
+            y:graphHeight/2 + topBorder))
+        
+        //bottom line
+        linePath.moveToPoint(CGPoint(x:margin,
+            y:recHeight - bottomBorder))
+        linePath.addLineToPoint(CGPoint(x:recWidth - margin,
+            y:recHeight - bottomBorder))
+        let color = UIColor(white: 1.0, alpha: 0.3)
+        color.setStroke()
+        
+        linePath.lineWidth = 1.0
+        linePath.stroke()
     }
 }
